@@ -25,4 +25,4 @@ services:
 networks:
   caddy_network:
     external: true
-    name: caddy_default  # Update this based on your setup - check with: docker network ls
+    name: caddy2_default  # Update this based on your setup - check with: docker network ls
