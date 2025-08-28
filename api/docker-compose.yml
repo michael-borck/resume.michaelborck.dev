@@ -6,7 +6,7 @@ services:
     container_name: resume-api
     restart: unless-stopped
     ports:
-      - "8008:8008"
+      - "8001:8000"
     environment:
       - ENV=production
       - LOG_LEVEL=info
@@ -14,14 +14,14 @@ services:
       # Mount the YAML file as read-only
       - ../data/cv-data.yml:/app/data/cv-data.yml:ro
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
     networks:
-      - resume-network
+      - caddy_default
 
 networks:
-  resume-network:
-    driver: bridge
+  caddy_default:
+    external: true
