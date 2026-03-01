@@ -1,5 +1,9 @@
 # Single Source CV System
 
+<!-- BADGES:START -->
+[![resume](https://img.shields.io/badge/-resume-00bcd4?style=flat-square)](https://github.com/topics/resume) [![automation](https://img.shields.io/badge/-automation-blue?style=flat-square)](https://github.com/topics/automation) [![css](https://img.shields.io/badge/-css-1572b6?style=flat-square)](https://github.com/topics/css) [![cv](https://img.shields.io/badge/-cv-blue?style=flat-square)](https://github.com/topics/cv) [![github-actions](https://img.shields.io/badge/-github--actions-blue?style=flat-square)](https://github.com/topics/github-actions) [![html](https://img.shields.io/badge/-html-e34f26?style=flat-square)](https://github.com/topics/html) [![javascript](https://img.shields.io/badge/-javascript-f7df1e?style=flat-square)](https://github.com/topics/javascript) [![pdf-generation](https://img.shields.io/badge/-pdf--generation-blue?style=flat-square)](https://github.com/topics/pdf-generation) [![quarto](https://img.shields.io/badge/-quarto-blue?style=flat-square)](https://github.com/topics/quarto) [![yaml](https://img.shields.io/badge/-yaml-blue?style=flat-square)](https://github.com/topics/yaml)
+<!-- BADGES:END -->
+
 A modern, single-source-of-truth CV system using Quarto that generates PDF, HTML, and Reveal.js presentations from one YAML data file.
 
 ## Features
