@@ -4,13 +4,9 @@ _site/
 *_cache/
 *_files/
 
-# Ignore Quarto-generated HTML/PDF in src and output
+# Ignore Quarto-generated HTML/PDF in src
 src/*.html
 src/*.pdf
-output/*.pdf
-
-# Output directory
-output/
 
 # R
 .Rhistory
@@ -100,3 +96,4 @@ generate_creative*.py
 # HTTP server
 *.pid
 nohup.out
+**/*.quarto_ipynb
