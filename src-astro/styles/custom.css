@@ -99,6 +99,13 @@ code {
   letter-spacing: 0.02em;
 }
 
+/* ── Section Intro ── */
+.section-intro {
+  color: var(--sl-color-gray-1);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ── Resume Format Grid ── */
 .format-grid {
   display: grid;
