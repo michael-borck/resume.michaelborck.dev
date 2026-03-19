@@ -4,7 +4,7 @@ description: Michael Borck — Interactive resume experiences
 template: splash
 hero:
   title: '<span class="hero-borck">resume</span><span class="hero-dot">.</span><span class="hero-resume">borck.dev</span>'
-  tagline: One CV, ten ways to explore it. All generated from a single source of truth.
+  tagline: One YAML file, ten ways to explore it.
   actions:
     - text: Choose your format
       link: "#formats"
@@ -148,6 +148,37 @@ Plain-text, structured resume optimised for LLM ingestion. Like robots.txt but f
 <a class="card-link" href="/llms.txt">Download llms.txt</a>
 
 </div>
+
+<div class="format-card format-card--source">
+<span class="card-icon">📦</span>
+
+### The Source
+
+Everything above is generated from a single 320-line YAML file. One edit, ten outputs. This is the file.
+
+<span class="badge">YAML</span>
+<span class="badge">Source</span>
+<a class="card-link" href="https://github.com/michael-borck/resume.borck.dev/blob/main/data/cv-data.yml">View Source YAML</a>
+
+</div>
+
+</div>
+
+<div class="workflow-section">
+
+### How it works
+
+```
+cv-data.yml (single source of truth)
+      |
+      +---> Quarto ---------> PDF, HTML, Slides
+      +---> Python scripts --> Quest, Terminal, Magazine, API Docs
+      +---> FastAPI ---------> Live API + Swagger
+      +---> MCP Server -----> AI assistant integration
+      +---> Generator -------> llms.txt
+```
+
+Edit the YAML. Run `make all`. Ten formats update. [View on GitHub →](https://github.com/michael-borck/resume.borck.dev)
 
 </div>
 
