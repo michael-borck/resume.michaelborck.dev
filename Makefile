@@ -1,7 +1,7 @@
 # Makefile for CV Generation
 # Single source of truth CV system using Quarto
 
-.PHONY: all pdf pdf-latex html slides quest terminal magazine api chatbot clean install help watch serve validate edit preview commit push
+.PHONY: all pdf pdf-latex html slides quest terminal magazine api chatbot llms-txt clean install help watch serve validate edit preview commit push
 
 # Default target
 all: pdf html slides
@@ -102,6 +102,12 @@ api:
 	@echo "API CV Standalone ready: creative/api/index.html"
 	@echo "  - Open creative/api/index.html in a browser to view"
 	@echo "  - Or serve with: cd creative/api && python3 -m http.server 8003"
+
+# Generate llms.txt - LLM-optimized plain text resume
+llms-txt:
+	@echo "Generating llms.txt..."
+	@python3 scripts/generate_llms_txt.py
+	@echo "llms.txt ready at: public-astro/llms.txt, output/llms.txt, and project root"
 
 # Generate Chatbot CV - Conversational Interface
 chatbot:
